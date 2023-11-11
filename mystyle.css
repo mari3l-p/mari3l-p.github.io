@@ -249,6 +249,7 @@ body {
   .cont img{
     width: 90%;
     height: 200px;
+    opacity: 1.0;
   }
 
   .container{
@@ -261,5 +262,6 @@ body {
 
   .cont-2 img{
     width: fit-content;
+    opacity: 1.0;
   }
 }
