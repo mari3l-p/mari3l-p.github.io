@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Mariel's Portfolio</title>
+</head>
+<body>
+    <div class="portfolio-main">
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <nav>
+                    <div class="logo">
+                        <a href="#"><img src="./images/logo.png" alt="logo"></a>
+                    </div>
+                    <!-- toggle bar -->
+                    <div class="toggle-bar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="navigation-bar">
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#services">services</a></li>
+                            <li><a href="mywork.html">my work</a></li>
+                            <li><a href="#">blog</a></li>
+                            <li class="hire-btn"><a href="#">Hire me</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- main content -->
+        <div class="main-content">
+            <div class="container">
+                <div class="main-content-wrapper">
+                    <div class="col-left">
+                        <span id="about">Hi i am Mariel Palacio</span>
+                        <h1>Freelancer | Fullstack Developer</h1>
+                        <p>As an 18-year-old with a passion for web development, I bring a unique blend of youthful enthusiasm and technical proficiency. 
+                            With a solid foundation in coding languages such as HTML, CSS, and JavaScript, I've successfully created responsive and visually appealing websites. 
+                            My commitment to staying up-to-date of the latest industry trends and technologies ensures that my work is both cutting-edge and innovative. 
+                            What sets me apart is not just my technical skills but also my ability to approach challenges with creativity and a fresh perspective. 
+                            Consider me for a fresh and vibrant approach to web development.</p>
+                        <div id="services">
+                            <span>Web Development</span>
+                            <span>Web Design</span>
+                            <span>Hosting and Deployment</span>
+                        </div>
+                        <a id="myWork" href="mywork.html" class="btn-main">
+                            See my work
+                        </a>
+                    </div>
+                    <div class="col-right">
+                        <img src="./images/pic of me.jpeg" alt="Display image">
+                    </div>
+                </div>
+                <!-- experience -->
+                <div class="experience-section">
+                    <div class="experience-inner">
+                        <div class="col">
+                            <h3>1 year</h3>
+                            <p>experience</p>
+                        </div>
+                        <div class="col">
+                            <h3>5+</h3>
+                            <p>Happy clients</p>
+                        </div>
+                        <div class="col">
+                            <h3>20+</h3>
+                            <p>Projects completed</p>
+                        </div>
+                        <div class="col">
+                            <h3>3+</h3>
+                            <p>Certificates</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="jquery.min.js"></script>
+<script>
+    $('.toggle-bar').on('click', function (event) {
+        $('this').toggleClass('open');
+        $('.navigation-bar').slideToggle('200');
+    })
+</script>
+</html>

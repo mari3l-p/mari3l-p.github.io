@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mystyle.css">
+    <title>Mariel Work</title>
+</head>
+<body>
+    <div class="portfolio-main">
+        <!-- Header -->
+        <!-- <nav>
+            <div class="logo">
+                <a href="index.html"><img src="./images/logo.png" alt="logo"></a>
+            </div>
+        </nav> -->
+        <header>
+                <nav>
+                    <div class="logo">
+                        <a href="index.html"><img src="./images/logo.png" alt="logo"></a>
+                    </div>
+                    <!-- toggle bar -->
+                    <div class="toggle-bar">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="navigation-bar">
+                        <ul>
+                            <li><a href="index.html">About</a></li>
+                            <li><a href="index.html">services</a></li>
+                            <li><a href="mywork.html">my work</a></li>
+                            <li><a href="index.html">blog</a></li>
+                            <li class="hire-btn"><a href="#">Hire me</a></li>
+                        </ul>
+                    </div>
+                </nav>
+        </header>
+
+    <div class="container">
+        <div class="text">These are some of my projects.</div>
+
+        <div class="content">
+            <div class="cont work-1">
+                <a href="index.html" target="_blank"><img src="./images/survey form-2.jpg" alt="survey form"></a>
+            </div>
+            <div class="cont work-2">
+                <a href="index.html" target="_blank"><img src="./images/documentation.jpg" alt="documentation of C"></a>
+            </div>
+            <div class="cont work-3">
+                <a href="index.html" target="_blank"><img src="./images/landing page-2.jpg" alt="coffee landing page"></a>
+            </div>
+            <div class="cont work-4">
+                <a href="index.html" target="_blank"><img src="./images/tribute page-2.jpg" alt="tribute page ABBA"></a>
+            </div>
+            <div class="cont work-5">
+                <a href="https://scratch.mit.edu/projects/895262040" target="_blank"><img src="./images/ghost jump.jpg" alt="Cactus and Ghost Game"></a>
+            </div>
+            <div class="cont work-6">
+                <a href="https://scratch.mit.edu/projects/894457174" target="_blank"><img src="./images/totoro game.jpg" alt="totoro's game"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="text">My Certificates.</div>
+
+        <div class="content-2">
+            <div class="cont-2 work-1">
+                <a href="https://certificates.cs50.io/c06b894d-1428-4154-858e-ac44b28f1013.pdf?size=letter" target="_blank"><img src="./images/c cs50-2.jpg" alt="CS50 Scratch Certificate"></a>
+            </div>
+            <div class="cont-2 work-2">
+                <a href="https://www.hackerrank.com/certificates/75de956b5385" target="_blank"><img src="./images/c HackerRank-2.jpg" alt="HackerRank Certificate"></a>
+            </div>
+            <div class="cont-2 work-3">
+                <a href="https://freecodecamp.org/certification/mari3l_p/responsive-web-design " target="_blank"><img src="./images/freeCodeCamp.jpg" alt="freeCodeCamp Certificate"></a>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+<script src="jquery.min.js"></script>
+<script>
+    $('.toggle-bar').on('click', function (event) {
+        $('this').toggleClass('open');
+        $('.navigation-bar').slideToggle('200');
+    })
+</script>
+</html>
